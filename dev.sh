@@ -1,0 +1,1 @@
+DEBUG=blog-express:* npm run dev
