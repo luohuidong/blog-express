@@ -15,7 +15,12 @@ if (env === 'dev') {
 }
 
 if (env === 'production') {
-  // MySQL..
+  MYSQL_CONF = {
+    host: DEV_DB_HOST,
+    user: DEV_DB_USER,
+    password: DEV_DB_PASSWORD,
+    database: DEV_DB_DATABASE
+  }
 }
 
 module.exports = MYSQL_CONF
